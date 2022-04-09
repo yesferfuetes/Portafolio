@@ -55,7 +55,7 @@ body {
     /* background: #F6615D; */
     color: #18ffff;
     padding: 10px 40px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 .menu a:hover {
@@ -279,10 +279,24 @@ span {
 
 /* HACIENDO LA PAGINA RESPONSIVE */
 
-/* responsive menu */
 @media screen and (max-width:1200px){
     header{
         padding: 40px;
+    }
+
+    .main img {
+        /* margin-top: -100px; */
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .main img{
+        display: none;
+    }
+
+    .info-content h1, p {
+        max-width: 800px;
     }
 }
 
@@ -317,7 +331,7 @@ span {
     #selected{
         background: none;
         padding: 10px 40px;
-        border-radius: none;
+        /* border-radius: none; */
         color: #18ffff;
         
     }
