@@ -259,14 +259,14 @@ span {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 200px;
+    height: 100px;
     background-color: #313131;
     color: #fff;
 }
 
 .footer-content,
 .sotial-network i {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #fff;
 }
 
@@ -277,15 +277,15 @@ span {
     margin-top: 1em;
 }
 
-/* HACIENDO LA PAGINA RESPONSIVE */
 
+/* HACIENDO LA PAGINA RESPONSIVE */
 @media screen and (max-width:1200px){
     header{
         padding: 40px;
     }
 
     .main img {
-        /* margin-top: -100px; */
+        margin-top: -100px;
         width: 250px;
     }
 }
@@ -362,5 +362,14 @@ span {
 
     .menu #btn_menu:hover {
         background: rgba(255, 255, 255, 0.2);
+    }
+
+    .about-info {
+        grid-column: none;
+    }
+
+    .about img{
+        display: none;
+        /* grid-column: none; */
     }
 }
