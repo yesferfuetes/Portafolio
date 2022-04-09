@@ -20,45 +20,57 @@ body {
 }
 
 /* estios del menu */
-.navbar {
+
+.container__menu{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     padding: 2em;
 }
 
-.brand {
-    margin-top: -7px;
-}
-
-.brand span{
-    color: aqua;
-}
-
-.menu {
+.menu{
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    align-items: center;
 }
 
-.menu li {
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
     list-style: none;
+    margin-left: 36px;
 }
 
-.menu a {
-    color: #fff;
+.menu ul li a{
     text-decoration: none;
-    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-.menu .active{
-    color: aqua;
+#selected{
+    /* background: #F6615D; */
+    color: #18ffff;
+    padding: 10px 40px;
+    border-radius: 50px;
 }
 
 .menu a:hover {
-    background-color: aqua;
-    color: #313131;
-    transition: ease-in .4s;
+    color: aqua;
+    transition: all 300ms;
 }
+
+/* .menu nav img{
+    display: none;
+} */
+
+.menu #btn_menu{
+    display: none;
+}
+
 
 /* estilos de la section info content */
 .main {
@@ -122,7 +134,7 @@ span {
     color: #313131;
 }
 
-.about-info p{
+.about-info p {
     color: black;
 }
 
@@ -187,6 +199,7 @@ span {
     justify-content: center;
 }
 
+/* ESTILOS DE LAS CARDS */
 .card {
     width: 300px;
     color: #fff;
@@ -264,3 +277,76 @@ span {
     margin-top: 1em;
 }
 
+/* HACIENDO LA PAGINA RESPONSIVE */
+
+/* responsive menu */
+@media screen and (max-width:1200px){
+    header{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+    .menu nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: #fff;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu ul li {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .menu ul li a {
+        color: #313131;
+    }
+
+    #selected{
+        background: none;
+        padding: 10px 40px;
+        border-radius: none;
+        color: #18ffff;
+        
+    }
+
+    #back_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .menu #btn_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #313131;
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .menu #btn_menu:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}

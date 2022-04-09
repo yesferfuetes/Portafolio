@@ -18,21 +18,30 @@
     <!-- Envuele el hero de la pagina -->
     <div class="wrapper">
         <header>
+            
             <!-- Navegacion -->
-            <nav class="navbar">
-                <!-- Titulo -->
+            <div class="container__menu">
+
                 <div class="brand">
                     <h2>YF <span>Dev</span></h2>
                 </div>
 
                 <!-- Menu -->
-                <ul class="menu">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="">Portafolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+                <div class="menu">
+                    <i class="fa fa-bars" id="btn_menu"></i>
+                    <div id="back_menu"></div>
+                    <nav id="nav">
+                        <!-- Aqui puede ir el logo -->
+                        <!-- <img src="images/logo-magtimus-v2.3-1.png" alt=""> -->
+                        <ul>
+                            <li><a href="#" id="selected">Inicio</a></li>
+                            <li><a href="#">Sobre mí</a></li>
+                            <li><a href="#">Portafolio</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
 
          <!-- contenido principal -->
@@ -63,57 +72,7 @@
                 <p>En mis tiempos libres me dedico a desarrollador freelance, en mi portafolio dejo mis creaciones en las que 
                     he trabajo.</p>
 
-                <!-- SKILLS -->
-                <br>
-                <h2>Skills</h2>
-                <div class="divider"></div>
-
-                <!-- Container para las cards de skills -->
-                <div class="container">
-
-                    <div class="skill">
-
-                        <!-- title -->
-                        <div class="skill__title">
-                            <h2>Backend</h2>
-                        </div>
-
-                        <ul>
-                            <li>PHP</li>
-                            <li>Manejo de Datos Json</li>
-                            <li>Ajax</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill">
-
-                        <!-- title -->
-                        <div class="skill__title">
-                            <h2>Fronted</h2>
-                        </div>
-
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Boostrap</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill">
-
-                        <!-- title -->
-                        <div class="skill__title">
-                            <h2>Base de Datos</h2>
-                        </div>
-
-                        <ul>
-                            <li>MySQL</li>
-                            <li>SQLServer</li>
-                        </ul>
-                    </div>
-                    
-                </div>
+                
                 <!-- <button class="download-cv">Read more</button>  -->  
         </div>
     </div>
@@ -188,5 +147,7 @@
             <a href="https://www.linkedin.com/in/yesfer-bany-fuentes-orozco-88643921b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
