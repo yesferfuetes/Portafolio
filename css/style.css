@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Roboto:wght@300&display=swap');
 
+/* :root{
+    --theme-color: #616161;
+    --navbar-shallow-color: #616161;
+} */
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -12,6 +17,12 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* CONTENIDO PRINCIPAL */
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -21,13 +32,24 @@ body {
 
 /* estios del menu */
 
+.topheader {
+    /* box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    position: fixed;
+    background-color: var(--theme-color); */
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 .container__menu{
     max-width: 1200px;
     height: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em;
+    
 }
 
 .menu{
@@ -53,7 +75,7 @@ body {
 
 #selected{
     /* background: #F6615D; */
-    color: #18ffff;
+    /* color: #18ffff; */
     padding: 10px 40px;
     /* border-radius: 50px; */
 }
@@ -106,6 +128,7 @@ span {
 }
 
 .main img {
+    margin-top: 5em;
     width: 350px;
     border: 5px solid aqua;
     height: auto;
@@ -156,23 +179,6 @@ span {
     height: 35vh;
     margin: 0 auto;
     display: flex;
-}
-
-/* ESTILOS DE SKILLS */
-.skill {
-    width: 300px;
-    color: #313131;
-    height: 350px;
-    margin: 1em;
-}
-
-.skill li {
-    color: black;
-}
-
-.skill__title {
-    font-size: 0.4em;
-    padding: 20px;
 }
  
 /* ESTILOS DEL PORTAFOLIO */
@@ -285,7 +291,8 @@ span {
     }
 
     .main img {
-        margin-top: -100px;
+        margin-top: 7em;
+        /* margin-top: -100px; */
         width: 250px;
     }
 }
@@ -306,7 +313,7 @@ span {
         position: fixed;
         top: 0;
         right: -250px;
-        background: #fff;
+        background: rgb(218, 214, 214);
         width: 250px;
         height: 100vh;
         padding: 40px;
@@ -328,13 +335,13 @@ span {
         color: #313131;
     }
 
-    #selected{
-        background: none;
-        padding: 10px 40px;
+    /* #selected{
+        /* background: none; */
+        /* padding: 10px 40px; */
         /* border-radius: none; */
-        color: #18ffff;
+        /* color: #18ffff; 
         
-    }
+    } */
 
     #back_menu {
         position: fixed;
@@ -353,10 +360,11 @@ span {
         width: 50px;
         height: 50px;
         background: rgba(255, 255, 255, 0.1);
-        color: #313131;
+        color: #fff;
         font-size: 24px;
         border-radius: 50px;
         cursor: pointer;
+        margin-left: 180px;
         transition: all 300ms;
     }
 

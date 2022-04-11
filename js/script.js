@@ -17,3 +17,13 @@ function ocultar_menu(){
     nav.style.right = "-250px";
     background_menu.style.display = "none";
 }
+
+/* cerrando menu links */
+const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
+
+menuLinks.forEach(menuLink => {
+    menuLink.addEventListener("click", function(){
+        nav.style.right = "-250px";
+        background_menu.style.display = "none";
+    })
+})
